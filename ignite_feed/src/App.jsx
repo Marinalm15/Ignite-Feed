@@ -1,10 +1,20 @@
 import { useState } from 'react'
+import "./global.css"
+import styles from "./App.module.css"
+import { Header } from './components/Header'
+import {Sidebar } from './components/Sidebar'
 
-function App() {
+export default function App() {
 
   return (
-    <h1>Hello Word!</h1>
+    <>
+    <Header />
+    
+    <div className={styles.wrapper}>
+    <Sidebar />
+      <main></main>
+    </div>
+    </>
   )
 }
 
-export default App
