@@ -14,12 +14,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: calc(0px - 1.5rem - 6px);
 }
 
 .sidebar footer {
     border-top: 1px solid var(--gray-600);
     margin-top:1.5rem;
     padding: 1.5rem 2rem 2rem;
+}
+
+.avatar {
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--grenn-500);
+}
+
+.profile strong {
+    margin-top: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.profile span {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
 }
 
 .sidebar footer a {
@@ -33,8 +55,87 @@
     font-weight: bold;
     display: block;
     text-decoration: none;
+    font-size: 0.875rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 0.5em;
+
+    trasition: color 0.2s, background-color 0.2s; 
+}
+
+.sidebar footer a:hover {
+    background-color: var(--green-500);
+    color: var(--white)
+}
+
+
+
+.post {
+    background-color: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.post + .post {
+    margin-top: 2rem;
+}
+
+.content {
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.post > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post > header time {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author img {
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--grenn-500);
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorInfo strong {
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.authorInfo span {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
 }
